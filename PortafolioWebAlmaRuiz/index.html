@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+}
+
+.presentación {
+    background-repeat: no-repeat;
+    background-image: url("formas.svg");
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 55px;
+}
+
+.contenido {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 115px;
+    font-style: oblique;
+    font-size: clamp(20px, 2vw, 36px);
+}
+
+.portafolio {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-bottom: 200px;
+}
+
+.imagenportafolio {
+    padding: 20px;
+}
+
+
+.info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: 36px;
+
+}
+
+.tituloverdederechapadre {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.tituloverdederecha {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 5vw, 70px);
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF00;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tituloverdeizquierdapadre {
+    display: flex;
+    max-width: 100%;
+}
+
+.tituloverdeizquierda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 5vw, 70px);
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF00;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.parrafoyfoto {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.parrafo {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 2vw, 25px);
+    padding-left: 50px;
+}
+
+.foto {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    padding-right: 10%;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.categoria {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(10px, 2vw, 35px);
+}
+
+.branding {
+    background-image: url("fondoacuarela.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fusion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fusioninfo {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    font-size: clamp(10px, 2vw, 25px);
+}
+
+.fusionlogo {
+    padding-right: 100px;
+    justify-content: left;
+}
+
+.mockups {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mockups img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mockupcelular {
+    padding-left: 40px;
+    width: 40%;
+}
+
+.sticker {
+    justify-content: left;
+    width: 50%;
+}
+
+
+.posters {
+    background-color: #2F004F;
+    background-image: url(ELEMENTOS.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 50px;
+}
+
+.postersdarriba {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.poster1 {
+    grid-column: 1 / 2;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.poster2 {
+    grid-column: 2 / 2;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.poster3 {
+    display: grid;
+    place-items: center;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.TERRA {
+    background-image: url(terra.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoterra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    height: 70vh;
+
+
+}
+
+.mockup {
+    grid-column: 1 / 2;
+    background-color: #DFEDDE;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.terratexto {
+    grid-column: 2 / 2;
+    background-color: #F39746;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: #DFEDDE;
+    font-size: medium;
+    text-align: right;
+}
+
+.infoterra {
+    padding-right: 50px;
+    padding-right: 50px;
+
+}
+
+.segundagrilla {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.formasterra {
+    background-image: url(Clip\ path\ group.svg);
+    grid-column: 1 / 2;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.perrito {
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    background-image: url(terramockuposter.png);
+    background-size: cover;
+}
+
+.TERRAcierre {
+    background-image: url(terra\ perrito.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.finalterra {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    width: 100%;
+    height: 50px;
+}
+
+.celeste {
+    background-color: #DFEDDE;
+
+}
+
+.naranja {
+    background-color: #F39746;
+}
+
+.verdeOSCURO {
+    background-color: #6F8261;
+}
+
+.cafe {
+    background-color: #A45031;
+}
+
+.EDITORIAL {
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+
+.grillatres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+}
+
+.infonocte {
+    grid-column: 1 / 2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DFEDDE;
+    font-size: medium;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 50px;
+
+}
+
+.noctelogo {
+    grid-column: 2;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.noctefanzine {
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imagenfanzine {
+    background-color: black;
+    width: 80%;
+}
+
+.seccionilustracion {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 60px;
+    align-items: center;
+    gap: 20px;
+}
+
+.pecera {
+    width: 80%;
+}
+
+.infantil {
+    width: 80%;
+}
+
+
+#botonparasubir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#botonparasubir:hover {
+    background-color: #318035;
+}
+
+    </style>
+</head>
+<body>
+    <div class="presentación">
+
+        <div class="contenedor">
+            <div class="contenido">@almaruizzzz</div>
+            <div class="contenido">2025</div>
+        </div>
+        <div class="portafolio">
+            <div class="imagenportafolio">
+            <img src="PORTAFOLIO.svg">
+             <div class="info">
+                    <div>ALMA RUIZ</div>
+                    <div>DISEÑO GRÁFICO</div>
+                </div>
+            </div>
+        </div>
+        <div class="tituloverdederechapadre">
+            <div class="tituloverdederecha">¿QUIÉN SOY?</div>
+        </div>
+
+        <div class="parrafoyfoto">
+            <div class="parrafo">
+                Hola! Soy Alma, una estudiante de segundo año de
+                Diseño Gráfico en la Universidad UNIACC. Lo que más
+                me motiva del diseño es poder construir identidades
+                visuales que transmitan una historia y una personalidad
+                única. Me gusta pensar el diseño como un lenguaje, una
+                forma de comunicar sin necesidad de palabras. Disfruto
+                mucho trabajar en branding, sistemas visuales y proyectos
+                editoriales, explorando cómo cada detalle puede
+                transformar una idea en algo memorable. Este portafolio
+                reúne algunos de mis trabajos favoritos realizados en la
+                universidad, proyectos que reflejan mi forma de ver,
+                pensar y crear diseño.
+            </div>
+            <div class="foto">
+         <img src="foto.svg" alt="yo">
+            </div>
+        </div>
+        <div class="categorias">
+            <div class="categoria">BRANDING</div>
+            <div class="categoria">EDITORIAL</div>
+            <div class="categoria">ILUSTRACIÓN</div>
+        </div>
+    </div>
+    <div class="branding">
+        <div class="tituloverdeizquierdapadre">
+            <div class="tituloverdeizquierda">1. BRANDING</div>
+        </div>
+        <div class="fusion">
+            <div class="fusioninfo">
+                <p>Fusion es un festival de teatro inmersivo (Experimentación
+                    y Conexión). Su identidad visual se basa en la
+                    experimentación con acuarelas, generando una gráfica
+                    orgánica y no convencional. Esto se traduce en una
+                    tipografía deformada y colores saturados, con formas
+                    entrelazadas que simbolizan la conexión entre el público y
+                    el arte.</p>
+        </div>
+            <div class="fusionlogo">
+                <img src="FUSIONLOGO.svg" alt="logofusion">
+            </div>
+        </div>
+        <div class="mockups">
+            <div class="mockupcelular"><img src="celuu.png" alt="celular"></div>
+            <div class="sticker"><img src="stiker 1.png" alt="sticker"></div>
+        </div>
+    </div>
+     <div class="posters">
+
+        <div class="postersdarriba">
+            <div class="poster1">
+                <img src="poster1.png" alt="posteruno">
+            </div>
+    <div class="poster2">
+                <img src="poster2.png" alt="psoterdos">
+            </div>
+        </div>
+        <div class="poster3">
+            <img src="poster3.png" alt="postertres">
+        </div>
+        
+     </div>
+     <div class="TERRA">
+        <div class="logoterra"><img src="terralogo.svg" alt="logoterra"></div>
+    </div>
+    <div class="grilla">
+        <div class="mockup">
+         <div class="fotomockup">
+                <img src="terra mockup.png" alt="terramockup"></div>
+            </div>
+            <div class="terratexto">
+                <div class="infoterra">
+                <p>Esta marca se posiciona como líder 
+                    en alimentos y productos naturales, 
+                    orgánicos y libres de crueldad para 
+                    mascotas. Se dirige a dueños de 20
+                    a 45 años que consideran a sus 
+                    animales como miembros de la 
+                    familia y buscan opciones de alta 
+                    calidad, nutritivas y seguras, 
+                    reflejando un estilo de vida 
+                    consciente, sostenible y respetuoso 
+                    con el medio ambiente.</p>
+            </div>
+            </div>
+        </div>
+
+    <div class="segundagrilla">
+        <div class="formasterra"></div>
+        <div class="perrito"></div>
+    </div>
+
+   <div class="TERRAcierre">
+    <div class="terralogo2"><img src="terralogo2.svg" alt="terralogo2"></div>
+    </div> 
+
+    <div class="finalterra">
+        <div class="celeste"></div>
+        <div class="naranja"></div>
+    <div class="verdeOSCURO"></div>
+        <div class="cafe"></div>
+    </div>
+
+    <div class="EDITORIAL">
+
+        <div class="tituloverdeizquierdapadre">
+            <div class="tituloverdeizquierda">2. EDITORIAL</div>
+        </div>
+
+        <div class="grillatres">
+            <div class="infonocte"><p>Nocte es una tipografía display con un leve contraste invertido, inspirada en la noche como espacio creativo. Su diseño busca equilibrar fuerza y sutileza, explorando el diálogo entre forma y contraforma. La tipografía fue desarrollada en el ramo de Taller de Tipografía III, por Alma Ruiz, María Comisso, Saily Ambla y Catalina Varela.
+A partir del desarrollo grupal de la fuente, cada integrante realizó su propio especimen tipográfico.En este especimen tipo fanzine,  propongo una lectura visual de Nocte, invitando a descubrir sus posibilidades expresivas y su potencial de uso en contextos editoriales, culturales y de branding.</p></div>
+            <div class="noctelogo"><img src="nonctelogooo.svg" alt="logonocte"></div>
+        </div>
+    </div>
+
+     <div class="noctefanzine">
+        <div class="imagenfanzine"><img src="FANZINE 1.svg" alt="noctefanzine"></div>
+        </div>
+
+        <div class="tituloverdeizquierdapadre">
+            <div class="tituloverdeizquierda">3. ILUSTRACIÓN</div>
+        </div>
+        <div class="seccionilustracion">
+            <div class="pecera">
+                <img src="PECERA.png" alt="PECERA">
+            </div>
+            <div class="infantil">
+                <img src="INFANTIL.png" alt="INFANTIL">
+            </div>
+        </div>
+
+    <button id="botonparasubir" style="display: none;">
+        ↑ 
+ </button>
+
+        <script>
+            const botonSubir = document.getElementById('botonparasubir');
+
+            function subirAlInicio() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
+                });
+            }
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) { 
+                    botonSubir.style.display = 'block';
+                } else {
+                    botonSubir.style.display = 'none';
+                }
+            });
+            botonSubir.addEventListener('click', subirAlInicio);
+
+        </script>
+
+</body>
+
+
+</html>
+    
+</body>
+</html>
